@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="configWindow" fx:id="panel" prefHeight="276.0" prefWidth="300.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml" fx:controller="sin.controller.ConfigWindowController">
+  <children>
+    <ComboBox fx:id="port" layoutX="150.0" layoutY="11.0" prefWidth="136.0" />
+    <Label layoutY="15.0" text="Select port :" AnchorPane.leftAnchor="14.0" />
+    <Label text="Baud rate :" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="72.0" />
+    <ComboBox id="baudrate" fx:id="baudRate" layoutX="150.0" layoutY="69.0" prefWidth="136.0" />
+    <Label text="Data Bits :" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="103.0" />
+    <Label text="Stop Bits :" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="135.0" />
+    <Label text="Parity :" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="168.0" />
+    <Label text="Flow control :" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="199.0" />
+    <ComboBox id="databits" fx:id="dataBits" layoutX="150.0" layoutY="99.0" prefWidth="136.0" />
+    <ComboBox id="stopbits" fx:id="stopBits" layoutX="150.0" layoutY="130.0" prefWidth="136.0" />
+    <ComboBox fx:id="parity" layoutX="150.0" layoutY="163.0" prefWidth="136.0" />
+    <ComboBox id="flowcontrol" fx:id="flowControl" layoutX="150.0" layoutY="194.0" prefWidth="136.0" />
+    <Button layoutX="48.0" layoutY="236.0" mnemonicParsing="false" onAction="#save" text="Save" />
+    <Button fx:id="cancel" layoutX="173.0" layoutY="236.0" mnemonicParsing="false" onMouseClicked="#close" text="Cancel" />
+    <TextField fx:id="customPort" disable="true" layoutX="150.0" layoutY="41.0" prefWidth="136.0" />
+    <Label layoutY="42.0" text="Custom port :" AnchorPane.leftAnchor="14.0" />
+  </children>
+</AnchorPane>

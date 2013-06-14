@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="282.0" prefWidth="262.0" xmlns:fx="http://javafx.com/fxml" fx:controller="sin.controller.InputWindowController">
+  <children>
+    <TextArea fx:id="inputTextArea" layoutX="14.0" layoutY="14.0" prefHeight="182.0" prefWidth="234.0" wrapText="false" />
+    <Button layoutX="14.0" layoutY="241.0" mnemonicParsing="false" onAction="#sendData" prefWidth="66.0" text="Send" />
+    <CheckBox fx:id="addNewLineCheckbox" layoutX="14.0" layoutY="208.0" mnemonicParsing="false" text="Add new line" />
+    <CheckBox fx:id="keepTextCheckbox" layoutX="144.0" layoutY="208.0" mnemonicParsing="false" prefWidth="104.99990000000253" selected="true" text="Keep Text" />
+    <Button layoutX="182.0" layoutY="241.0" mnemonicParsing="false" onAction="#clearData" prefWidth="66.0" text="Clear" />
+  </children>
+</AnchorPane>
